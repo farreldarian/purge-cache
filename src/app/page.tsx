@@ -19,6 +19,11 @@ export default async function Home() {
   );
 }
 
+/**
+ * In this example, I'm using the `unstable_cache` function
+ * wrapped by another function to demonstrate how I use
+ * `unstable_cache` in my codebase which uses dynamic tags.
+ */
 async function someCachedFunction() {
   return unstable_cache(
     async () => {
