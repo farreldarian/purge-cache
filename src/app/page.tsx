@@ -1,6 +1,7 @@
 import { unstable_cache } from "next/cache";
 import RevalidateButton from "./RevalidateButton";
 import { TAG } from "./constants";
+import { Toaster } from "sonner";
 
 export default async function Home() {
   return (
@@ -12,6 +13,8 @@ export default async function Home() {
         </p>
         <RevalidateButton />
       </div>
+
+      <Toaster />
     </main>
   );
 }
